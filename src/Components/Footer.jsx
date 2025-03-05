@@ -15,11 +15,11 @@ const Footer = () => {
             <div className='cursor-pointer'>
                 <h3 className='text-lg text-semibold mb-4'>Quick Links</h3>
                 <ul className='cursor-pointer'>
-                    <li><a href="#" className='hover:text-orange-500'>Home</a></li>
-                    <li><a href="#" className='hover:text-orange-500 '>About us</a></li>
-                    <li><a href="#" className='hover:text-orange-500 '>Academics</a></li>
-                    <li><a href="#" className='hover:text-orange-500 '>Admissions</a></li>
-                    <li><a href="#" className='hover:text-orange-500 '>Offices</a></li>
+                    <li><a href="Home" className='hover:text-orange-500'>Home</a></li>
+                    <li><a href="About Us" className='hover:text-orange-500 '>About us</a></li>
+                    <li><a href="Academics" className='hover:text-orange-500 '>Academics</a></li>
+                    <li><a href="Admissions" className='hover:text-orange-500 '>Admissions</a></li>
+                    <li><a href="Offices and Directories" className='hover:text-orange-500 '>Offices</a></li>
                 </ul>
             </div>
 

@@ -16,19 +16,19 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="/about-us">About Us</Link>
+            <Link to="/About Us">About Us</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="/admission">Admission</Link>
+            <Link to="/Admission">Admission</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="/academics">Academics</Link>
+            <Link to="/Academics">Academics</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="/offices-and-directories">Offices and Directories</Link>
+            <Link to="/Offices and Directories">Offices and Directories</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="/research-and-innovations">Research and Innovation</Link>
+            <Link to="/Research and Innovations">Research and Innovation</Link>
           </li>
         </ul>
       </div>
