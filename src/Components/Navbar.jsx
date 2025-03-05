@@ -33,16 +33,20 @@ const Navbar = () => {
 
       <button
         onClick={toggleSidebar}
-        className="lg:hidden text-white"
+        className="lg:hidden text-white z-50"
         aria-expanded={isSidebarOpen}
         aria-label="Toggle navigation"
       >
-        <i className="fas fa-bars"></i>
+        <i className="fas fa-bars text-2xl"></i>
       </button>
 
       {isSidebarOpen && (
-        <div className="lg:hidden fixed top-0 left-0 w-3/4 h-full bg-gray-900 p-4 z-50 transition-transform transform translate-x-0"
-        style={{ transform: isSidebarOpen ? "translateX(0)" : "translateX(-100%)" }}>
+        <div
+          className="lg:hidden fixed top-0 left-0 w-3/4 h-full bg-gray-900 p-4 z-50 transition-transform transform translate-x-0"
+          style={{
+            transform: isSidebarOpen ? "translateX(0)" : "translateX(-100%)",
+          }}
+        >
           <ul className="text-white space-y-10">
             <li className="hover:text-yellow-400">
               <Link to="/" onClick={toggleSidebar}>
