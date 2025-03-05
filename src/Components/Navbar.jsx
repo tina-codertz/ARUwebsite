@@ -37,7 +37,7 @@ const Navbar = () => {
       <div className="lg:hidden flex justify-center items-center w-10">
         <button
           onClick={toggleSidebar}
-          className="text-black z-20 p-6 text-3xl"
+          className="text-black z-20 p-2 text-3xl"
           aria-expanded={isSidebarOpen}
           aria-label="Toggle navigation"
         >
