@@ -6,40 +6,46 @@ const Navbar = () => {
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
   };
+
   return (
-    <nav className="bg-orange-500 p-4 text-white  fixed w-full z-40 top-30 ">
+    <nav className="bg-orange-500 p-4 text-white fixed w-full z-40 top-30">
+      {/* Desktop Navbar */}
       <div className="lg:flex lg:justify-between hidden">
-        <ul className="flex space-x-6 text-white ">
+        <ul className="flex space-x-6 text-white">
           <li className="hover:text-yellow-400">
             <Link to="/">Home</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="About Us">About Us</Link>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="Admission">Admission</Link>
+            <Link to="/admission">Admission</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="Academics">Academics</Link>
+            <Link to="/academics">Academics</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="Offices and Directories">Offices and Directories</Link>
+            <Link to="/offices-and-directories">Offices and Directories</Link>
           </li>
           <li className="hover:text-yellow-400">
-            <Link to="Research and Innovations">Research and Innovation</Link>
+            <Link to="/research-and-innovations">Research and Innovation</Link>
           </li>
         </ul>
       </div>
 
-      <button
-        onClick={toggleSidebar}
-        className="lg:hidden text-white z-50"
-        aria-expanded={isSidebarOpen}
-        aria-label="Toggle navigation"
-      >
-        <i className="fas fa-bars text-2xl"></i>
-      </button>
+      {/* Hamburger Menu Button (Center Aligned) */}
+      <div className="lg:hidden flex justify-center items-center w-10">
+        <button
+          onClick={toggleSidebar}
+          className="text-black z-20 p-6 text-3xl"
+          aria-expanded={isSidebarOpen}
+          aria-label="Toggle navigation"
+        >
+          {isSidebarOpen ? "×" : "☰"}
+        </button>
+      </div>
 
+      {/* Sidebar for Small Devices */}
       {isSidebarOpen && (
         <div
           className="lg:hidden fixed top-0 left-0 w-3/4 h-full bg-gray-900 p-4 z-50 transition-transform transform translate-x-0"
